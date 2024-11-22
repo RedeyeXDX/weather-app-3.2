@@ -2,7 +2,7 @@ import logo from "/logo.png";
 import "./App.css";
 import axios from "axios";
 import { useState } from "react";
-const OPEN_WEATHER_API_KEY = "15d39a776935ba6adf7dbfe8d9eed9d8";
+const OPEN_WEATHER_API_KEY = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
 
 function App() {
   const [cityInputValue, setCityInputValue] = useState("");
